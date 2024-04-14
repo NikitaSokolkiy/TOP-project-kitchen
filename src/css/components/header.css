@@ -123,20 +123,12 @@
 .header__menu{
     width: 100%; 
     max-width: 1200px;
-    margin-top: 20px;
 }
 .menu-list{
-    width: 1200px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    border-bottom: solid;
-    padding-bottom: 20px;
-    border-color: red;
-
-
 }
 .menu-list__link{
     color: rgb(38, 38, 38);
@@ -156,7 +148,7 @@
 .menu-list__item::after {
     content: '';
     position: absolute;
-    bottom: -20px;
+    bottom: -2px;
     left: 0;
     right: 0;
     width: 100%;

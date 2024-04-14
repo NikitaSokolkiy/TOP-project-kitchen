@@ -29,7 +29,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 74px;
+    padding-bottom: 25px;
     max-width: 1200px;
 
 }
@@ -53,9 +55,16 @@
     margin: 0;
     padding: 0;
 }
+.header-advertising-block{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    animation: slideInFromLeft 2s ease-out;
+}
 .advertising-list{
     display: flex;
     flex-direction: column;
+    gap: 22px;
     padding-left: 1px;
 }
 .advertising-item{
@@ -89,7 +98,6 @@
     width: 100%;
     max-width: 500px;
     height: 205px;
-    margin-top: 100px;
     background-color: #ffffff;
 
     border-radius: 10px;
@@ -100,6 +108,8 @@
     justify-content: center;
 
     box-shadow: 0 10px 17px 0 rgba(0,0,0,0.1);
+    margin-bottom: 48px;
+    animation: slideInFromRight 1.5s ease-out;
 }
 .sale-block__info{
     display: flex;
@@ -171,7 +181,7 @@
 }
 .advantages_list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
     max-width:1200px ;
     margin:  50px auto;
     border-radius: 10px;
@@ -182,22 +192,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
+    gap: 21px;
+    padding: 30px 20px;
     border-radius: 10px;
     height: auto;
 
     box-shadow: 0px 0px 23px 0px rgba(148, 148, 148, 0.17);
     background: rgb(255, 255, 255);
 }
-.advantages_img{
-    margin-bottom: 40px;
-}
 .advantages-text{
     text-align: center;
     padding: 0;
     color: rgb(12, 12, 12);
     font-size: 20px;
-    font-weight: 350;
+    font-weight: 400;
     line-height: 137%;
     margin: 0;
     padding: 0;
@@ -213,26 +221,130 @@
     margin: 0;
     padding: 0;
 }
-.advantages_img-gear{
-    padding-top: -30px;
-    margin-bottom: 40px;
-    margin-top: -50px;
-}
-.advantages_img-clock{
-    padding-top: -30px;
-    margin-bottom: 40px;
-    margin-top: -50px;
-}
-.kitchen-choose{
+
+.Kitchen-choose{
     width: 100%;
     height: 100%;
-}
-.Bg_kitchen-list{
-    background-image: url('src/img/BG-2.jpeg');
-    background-size: cover;
-
+    position: relative;
 }
 .kitchen-list_main{
     position: relative;
     z-index: 4;
+}
+.bg-img-absolute{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.kitchen-choose__block{
+    position: relative;
+    z-index: 2;
+}
+.kitchen-choose_text{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 55.2px;
+    color: #0c0c0c;
+}
+.kitchen-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 25px 35px;
+    margin-top: 80px;
+}
+.border-radius{
+    border-radius: 15px 15px 0 0;
+}
+.kitchen-item{
+    max-width: 349px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23px;
+    border-radius: 25px;
+
+    box-shadow: 0px 4px 20px 0px rgba(150, 150, 150, 0.25);
+    background: rgb(255, 255, 255);
+}
+.kitchen-item:hover{
+    animation: animationScale 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.info-box{
+    max-width: 300px;
+    padding-left: 20px;
+    padding-bottom: 23px;
+
+}
+.material{
+}
+.price{
+    padding-top: 65px;
+}
+.material_light-text{
+    color: rgb(75, 75, 75);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 115%;
+    text-align: left;
+    padding-bottom: 17px;
+}
+.material_bold-text{
+    padding-left: 10px;
+    color: rgb(12, 12, 12);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 115%;
+    text-align: left;
+}
+.price_light-text{
+    color: rgb(75, 75, 75);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 115%;
+    text-align: left;
+}
+.old-price{
+    color: rgb(12, 12, 12);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 115%;
+    text-align: left;
+    padding-left: 10px;
+
+}
+.new-price{
+    color: rgb(227, 1, 15);
+    font-size: 22px;
+    font-weight: 599;
+    line-height: 115%;
+    text-align: left;
+    padding-left: 10px;
+}
+.info-box_buttons{
+    display: flex;
+    flex-direction: column;
+    max-width: 201px;
+    padding-top: 30px;
+    gap: 15px;
+}
+.get-catalog{
+    color: rgb(38, 38, 38);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    border-radius: 5px;
+    background: white;
+    height: 49px;
+    min-width: 201px;
+    padding: 10px;
+    border: 1px solid rgb(227, 1, 15);
 }

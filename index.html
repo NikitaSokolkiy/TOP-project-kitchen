@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/css/base/default.css">
+    <link href="src/css/base/default.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/components/main.css">
     <link rel="stylesheet" href="src/css/base/style.css">
     <link rel="stylesheet" href="src/css/components/header.css">
+    <link rel="stylesheet" href="src/css/components/animation.css">
     <title>Kithen craft</title>
 </head>
 <body>
@@ -61,245 +62,225 @@
                 </ul>
             </nav>
         </div>
-    </header> 
+    </header>
     <main class="main">
         <section class="main-header">
-          <img src="src/img/photo_bottom_header.jpeg" alt="background image " class="main-header__bg-image">
-          <div class="header-advertising">
-              <p class="main-header__text-top">Кухни на заказ <p class="main-header__text-bottom">в Краснодаре</p>
-              <ul class="advertising-list">
-                  <li class="advertising-item">
-                      <img src="src/img/icons/money.svg" alt="money" class="img-money">
-                      <p class="advertising-item__text-money"> Цены от <span class="red-dark-color fs-24 weight500">19990 ₽ м./п </span></p>
-                  </li>
-                  <li class="advertising-item">
-                      <img src="src/img/icons/calendar.svg" alt="calendar" class="img-calendar">
-                      <p class="advertising-item__text-calendar"> Изготовим от <span class="red-dark-color fs-24 weight600"> 7  дней </span></p>
-                  </li>
-                  <li class="advertising-item">
-                      <img src="src/img/icons/awards.svg" alt="awards" class="img-awards">
-                      <p class="advertising-item__text-awards"> Гарантия <span class="red-dark-color fs-24 weight600"> 2 <span class="red-dark-color fs-24 weight600">года</span></span></p>
-                  </li>
-              </ul>
-              <div class="main-header__sale-block">
-                  <div class="sale-block__info">
-                      <p class="sale-block__title">Акция</p>
-                      <p class="sale-block__text">Скидка <span class="red-dark-color fs-24">35%</span> на Вашу кухню</p>
-                      <p class="sale-block__text_light">до 01.01.2022</p>
-                  </div>
-                  <form action="" class="sale-block__form">
-                      <input type="text" class="sale-block__form-input" placeholder="Введите номер телефона">
-                      <button class="sale-block__form-button">Получить скидку</button>
-                  </form>
-              </div>
-          </div>
+            <img src="src/img/photo_bottom_header.jpeg" alt="background image " class="main-header__bg-image">
+            <div class="header-advertising">
+                <div class="header-advertising-block">
+                    <h1 class="main-header__text-top">Кухни на заказ <p class="main-header__text-bottom">в Краснодаре</p></h1>
+                    <ul class="advertising-list">
+                        <li class="advertising-item">
+                            <img src="src/img/icons/money.svg" alt="money" class="img-money">
+                            <p class="advertising-item__text-money"> Цены от <span class="red-dark-color fs-24 weight500">19990 ₽ м./п </span></p>
+                        </li>
+                        <li class="advertising-item">
+                            <img src="src/img/icons/calendar.svg" alt="calendar" class="img-calendar">
+                            <p class="advertising-item__text-calendar"> Изготовим от <span class="red-dark-color fs-24 weight600"> 7  дней </span></p>
+                        </li>
+                        <li class="advertising-item">
+                            <img src="src/img/icons/awards.svg" alt="awards" class="img-awards">
+                            <p class="advertising-item__text-awards"> Гарантия <span class="red-dark-color fs-24 weight600"> 2 <span class="red-dark-color fs-24 weight600">года</span></span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-header__sale-block">
+                    <div class="sale-block__info">
+                        <p class="sale-block__title">Акция</p>
+                        <p class="sale-block__text">Скидка <span class="red-dark-color fs-24">35%</span> на Вашу кухню</p>
+                        <p class="sale-block__text_light">до 01.01.2022</p>
+                    </div>
+                    <form action="" class="sale-block__form">
+                        <input type="text" class="sale-block__form-input" placeholder="Введите номер телефона">
+                        <button class="sale-block__form-button">Получить скидку</button>
+                    </form>
+                </div>
+            </div>
         </section>
         <section class="advantages">
             <ul class="advantages_list">
                 <li class="advantages_list-item">
-                    <img src="src/img/icons/coins.svg" class="advantages_img" alt="coins">
-                    <p class="advantages-text">Рассрочка 0% <p class="advantages-text-2">до 12 месяцев</p>
+                    <div class="advantages-img__wrapper">
+                        <img src="src/img/icons/coins.svg" class="advantages_img" alt="coins">
+                    </div>
+                    <p class="advantages-text">Рассрочка 0% до 12 месяцев</p>
                 </li>
                 <li class="advantages_list-item">
-                    <img src="src/img/icons/manufactor.svg" class="advantages_img" alt="manufacture">
-                    <p class="advantages-text">Устанавливаем кухни <p class="advantages-text-2">с 2013 года</p>
+                    <div class="advantages-img__wrapper">
+                        <img src="src/img/icons/manufactor.svg" class="advantages_img" alt="manufacture">
+                    </div>
+                    <p class="advantages-text">Устанавливаем кухни с 2013 года</p>
                 </li>
                 <li class="advantages_list-item">
-                    <img src="src/img/icons/gear.svg" class="advantages_img-gear" alt="gear image">
+                    <div class="advantages-img__wrapper">
+                        <img src="src/img/icons/gear.svg" class="advantages_img-gear" alt="gear image">
+                    </div>
                     <p class="advantages-text">Бесплатная установка</p>
                 </li>
                 <li class="advantages_list-item" >
-                    <img src="src/img/icons/sand%20clock.svg" class="advantages_img-clock" alt="sand watches">
-                    <p class="advantages-text">Срок службы 20 лет</p>
+                    <div class="advantages-img__wrapper">
+                        <img src="src/img/icons/sand%20clock.svg" class="advantages_img-clock" alt="sand watches">
+                    </div>
+                    <p class="advantages-text">Срок службы <br> 20 лет</p>
                 </li>
             </ul>
         </section>
-        <section class="Kitchen-choose">
-
-            <div class="Kitchen-list_main">
-                <p class="kitchen-choose_text">Какие кухни<p class="red-dark-color">мы производим?</p>
+        <section class="Kitchen-choose ">
+            <img src="./src/img/BG-2.jpeg" alt="" class="bg-img-absolute">
+            <div class="kitchen-choose__block container">
+                <h2 class="kitchen-choose_text">
+                    Какие кухни <br> <span class="red-dark-color">мы производим?</span>
+                </h2>
                 <ul class="kitchen-list">
                     <li class="kitchen-item">
-                        <img src="src/img/photoKitchen/" alt="Kitchen-">
+                        <img src="src/img/photoKitchen/kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius">
                         <div class="info-box">
                             <div class="material">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                                <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                             </div>
                             <div class="price">
-                                <p></p>
+                                <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                             </div>
                             <div class="info-box_buttons">
-                                <button class="get-catalog"></button>
+                                <button class="get-catalog">Получить каталог</button>
                                 <button class="button_amount"> Расчитать стоимость </button>
                             </div>
                         </div>
                     </li>
-                </ul>
-            </div>
-            <div class="Kitchen-list_main">
-                <ul class="kitchen-list">
                     <li class="kitchen-item">
-                        <img src="src/img/photoKitchen/" alt="Kitchen-">
+                        <img src="src/img/photoKitchen/kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius">
                         <div class="info-box">
                             <div class="material">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                                <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                             </div>
                             <div class="price">
-                                <p></p>
+                                <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                             </div>
                             <div class="info-box_buttons">
-                                <button class="get-catalog"></button>
+                                <button class="get-catalog">Получить каталог</button>
                                 <button class="button_amount"> Расчитать стоимость </button>
                             </div>
                         </div>
                     </li>
-                </ul>
-            </div>
-            <div class="Kitchen-list_main">
-                <ul class="kitchen-list">
                     <li class="kitchen-item">
-                        <img src="src/img/photoKitchen/" alt="Kitchen-">
+                        <img src="src/img/photoKitchen/kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius">
                         <div class="info-box">
                             <div class="material">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                                <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                             </div>
                             <div class="price">
-                                <p></p>
+                                <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                             </div>
                             <div class="info-box_buttons">
-                                <button class="get-catalog"></button>
+                                <button class="get-catalog">Получить каталог</button>
                                 <button class="button_amount"> Расчитать стоимость </button>
                             </div>
                         </div>
                     </li>
-                </ul>
-            </div>
-            <div class="Kitchen-list_main">
-                <ul class="kitchen-list">
                     <li class="kitchen-item">
-                        <img src="src/img/photoKitchen/" alt="Kitchen-">
+                        <img src="src/img/photoKitchen/kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius">
                         <div class="info-box">
                             <div class="material">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                                <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                             </div>
                             <div class="price">
-                                <p></p>
+                                <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                             </div>
                             <div class="info-box_buttons">
-                                <button class="get-catalog"></button>
+                                <button class="get-catalog">Получить каталог</button>
                                 <button class="button_amount"> Расчитать стоимость </button>
                             </div>
                         </div>
                     </li>
-                </ul>
-            </div>
-            <div class="Kitchen-list_main">
-                <ul class="kitchen-list">
                     <li class="kitchen-item">
-                        <img src="src/img/photoKitchen/" alt="Kitchen-">
+                        <img src="src/img/photoKitchen/kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius">
                         <div class="info-box">
                             <div class="material">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                                <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                             </div>
                             <div class="price">
-                                <p></p>
+                                <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                             </div>
                             <div class="info-box_buttons">
-                                <button class="get-catalog"></button>
+                                <button class="get-catalog">Получить каталог</button>
                                 <button class="button_amount"> Расчитать стоимость </button>
                             </div>
                         </div>
                     </li>
-                </ul>
-            </div>
-            <div class="Kitchen-list_main">
-                <ul class="kitchen-list">
                     <li class="kitchen-item">
-                        <img src="src/img/photoKitchen/" alt="Kitchen-">
+                        <img src="src/img/photoKitchen/kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius">
                         <div class="info-box">
                             <div class="material">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                                <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                             </div>
                             <div class="price">
-                                <p></p>
+                                <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                             </div>
                             <div class="info-box_buttons">
-                                <button class="get-catalog"></button>
+                                <button class="get-catalog">Получить каталог</button>
                                 <button class="button_amount"> Расчитать стоимость </button>
                             </div>
                         </div>
                     </li>
-                </ul>
-            </div>
-            <div class="Kitchen-list_main">
-                <ul class="kitchen-list">
                     <li class="kitchen-item">
-                        <img src="src/img/photoKitchen/" alt="Kitchen-">
+                        <img src="src/img/photoKitchen/kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius">
                         <div class="info-box">
                             <div class="material">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                                <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                             </div>
                             <div class="price">
-                                <p></p>
+                                <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                             </div>
                             <div class="info-box_buttons">
-                                <button class="get-catalog"></button>
+                                <button class="get-catalog">Получить каталог</button>
                                 <button class="button_amount"> Расчитать стоимость </button>
                             </div>
                         </div>
                     </li>
-                </ul>
-            </div>
-            <div class="Kitchen-list_main">
-                <ul class="kitchen-list">
                     <li class="kitchen-item">
-                        <img src="src/img/photoKitchen/" alt="Kitchen-">
+                        <img src="src/img/photoKitchen/kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius">
                         <div class="info-box">
                             <div class="material">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                                <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                             </div>
                             <div class="price">
-                                <p></p>
+                                <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                             </div>
                             <div class="info-box_buttons">
-                                <button class="get-catalog"></button>
+                                <button class="get-catalog">Получить каталог</button>
                                 <button class="button_amount"> Расчитать стоимость </button>
                             </div>
                         </div>
                     </li>
-                </ul>
-            </div>
-            <div class="Kitchen-list_main">
-                <ul class="kitchen-list">
                     <li class="kitchen-item">
-                        <img src="src/img/photoKitchen/" alt="Kitchen-">
+                        <img src="src/img/photoKitchen/kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius">
                         <div class="info-box">
                             <div class="material">
-                                <p></p>
-                                <p></p>
-                                <p></p>
+                                <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                             </div>
                             <div class="price">
-                                <p></p>
+                                <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                             </div>
                             <div class="info-box_buttons">
-                                <button class="get-catalog"></button>
+                                <button class="get-catalog">Получить каталог</button>
                                 <button class="button_amount"> Расчитать стоимость </button>
                             </div>
                         </div>
