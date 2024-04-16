@@ -121,8 +121,9 @@
     text-decoration-line: underline;
 }
 .header__menu{
-    width: 100%; 
     max-width: 1200px;
+    margin-top: 20px;
+    padding-left: 40px;
 }
 .menu-list{
     list-style-type: none;
