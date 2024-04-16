@@ -398,12 +398,17 @@
     font-weight: 700;
     line-height: 137%;
     text-align: left;
+    margin-top: 18px;
 }
 .more-than{
     font-size: 18px;
     font-weight: 400;
     line-height: 126%;
     text-align: left;
+    margin-top: 10px;
+}
+.get-catalog_red-button{
+    padding:  0 0 29px 20px;
 }
 .get-catalog_button{
     color: white;
