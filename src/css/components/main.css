@@ -653,6 +653,7 @@
     width: 100%;
     height: auto;
     position: relative;
+    padding-bottom: 120px;
 }
 .additional-solutions_BG-cover-img{
     position: absolute;
@@ -683,6 +684,7 @@
     grid-template-columns: repeat(3, minmax(350px, 1fr));
     margin-top:60px;
     gap: 60px;
+
 }
 .additional-solutions_item-img{
     width: 100%;
@@ -712,4 +714,125 @@ additional-solutions__item-block-text{
 }
 .additional-solutions__button{
     margin-top: 25px;
+}
+.our-kitchen-block{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.our-kitchen-block-text{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 115%;
+    text-align: left;
+}
+.our-kitchen-block__list-item{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+    grid-gap: 60px 50px;
+    margin-top: 60px;
+}
+.our-kitchen-block__item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.our-kitchen-block__text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.our-kitchen-block__text-box-main{
+    color: rgb(12, 12, 12);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 0;
+    text-align: left;
+}
+.our-kitchen-block__text-box-light{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 145%;
+    letter-spacing: 0;
+    text-align: left;
+}
+.our-kitchen-block__buttons{
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    justify-content: center;
+    gap: 20px;
+}
+.amount{
+    border-radius: 5px;
+    color: white;
+    width: 286px;
+    height: 49px;
+    background: #E3010F;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    border-style: none;
+}
+.catalog_get{
+    border: 1px solid rgb(227, 1, 15);
+    border-radius: 5px;
+    height: 49px;
+    width: 286px;
+    color: #0c0c0c;
+    background: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+}
+ /*section Perfect kitchen*/
+
+.perfect-kitchen{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+.perfect-kitchen__Bg{
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0.45) 14.455%,rgba(255, 255, 255, 0.45) 43.258%,rgba(255, 255, 255, 0.45) 68.932%,rgb(255, 255, 255) 100%),url(src/img/BG-4.jpeg);
+}
+.perfect-kitchen__block{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+}
+.perfect-kitchen__main-text{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: 0;
+    text-align: left
+}
+.perfect-kitchen__list-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px ;
+}
+
+.special-item{
+    margin: auto;
+}
+.perfect-kitchen__list-item:nth-child(4),
+.perfect-kitchen__list-item:nth-child(5) {
+    align-self: end;
 }
