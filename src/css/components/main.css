@@ -762,8 +762,7 @@ additional-solutions__item-block-text{
 .our-kitchen-block__buttons{
     display: flex;
     flex-direction: row;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 30px;
     justify-content: center;
     gap: 20px;
 }
@@ -801,12 +800,16 @@ additional-solutions__item-block-text{
     position: relative;
 
 }
-.perfect-kitchen__Bg{
+.perfect-kitchen__Bg-img{
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
     z-index: 1;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(180.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0.45) 14.455%,rgba(255, 255, 255, 0.45) 43.258%,rgba(255, 255, 255, 0.45) 68.932%,rgb(255, 255, 255) 100%),url(src/img/BG-4.jpeg);
 }
 .perfect-kitchen__block{
     position: relative;
@@ -815,6 +818,7 @@ additional-solutions__item-block-text{
     flex-direction: column;
     max-width: 1200px;
     margin: auto;
+    gap: 40px;
 }
 .perfect-kitchen__main-text{
     font-size: 48px;
@@ -826,13 +830,134 @@ additional-solutions__item-block-text{
 .perfect-kitchen__list-item{
     display: flex;
     flex-wrap: wrap;
-    gap: 45px ;
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+.perfect-kitchen__item{
+    max-width: 350px ;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px 0px rgba(150, 150, 150, 0.25);
+    background: rgb(255, 255, 255);
+}
+.perfect-kitchen__item-img{
+    border-radius: 15px 15px 0 0 ;
 }
 
-.special-item{
-    margin: auto;
+.perfect-kitchen__item-text{
+    padding: 18px 55px 30px 20px;
 }
-.perfect-kitchen__list-item:nth-child(4),
-.perfect-kitchen__list-item:nth-child(5) {
-    align-self: end;
+
+.perfect-kitchen__item__main-text{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    padding-bottom: 14px ;
+
+}
+.perfect-kitchen__item-bold{
+    padding: 10px 0 10px 0;
+    color: rgb(12, 12, 12);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 0;
+    text-align: left;
+}
+.perfect-kitchen__item-light{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0;
+    text-align: left;
+}
+.perfect-kitchen__item-light__link{
+    color: #E3010F;
+}
+.special-item-1{
+    margin: 0 0 0 197px;
+}
+.special-item-2{
+    margin: 0 197px 0 0;
+}
+.reviews{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 74px;
+    margin-top: 126px;
+    margin-bottom: 120px;
+}
+.reviews__title{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: 0;
+    text-align: left;
+}
+.reviews__block{
+    padding: 40px 45px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px 0px rgba(150, 150, 150, 0.25);
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+.reviews__block-text{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    max-width: 520px;
+}
+.reviews__block-text__date{
+    color: rgb(129, 129, 129);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: 0;
+    text-align: left;
+}
+.reviews__block-text__name-surname{
+    color: rgb(12, 12, 12);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: 0;
+    text-align: left;
+}
+.reviews__block-text__rating{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.reviews__block-text__text{
+    color: rgb(12, 12, 12);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 165%;
+    letter-spacing: 0;
+    text-align: left;
+}
+.reviews__block__image{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 29px;
+}
+.reviews__block-text__get-design{
+    height: 49px;
+    width: 286px;
+    background: #E3010F;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    border-style: none;
+
 }
