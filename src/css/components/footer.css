@@ -1,0 +1,29 @@
+
+.footer{
+    color: rgb(160, 168, 177);
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+    background: rgb(241, 241, 241);
+}
+.footer__box{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+}
+.footer__box__left-text{
+    padding: 0 151px 0 0;
+}
+.footer__box__right-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 58px;
+    gap: 30px;
+}
