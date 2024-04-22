@@ -436,9 +436,7 @@
     display: flex;
     flex-direction: row;
     gap: 42px;
-
 }
-
 .catalog-item{
     border-radius: 15px;
     box-shadow: 0 4px 20px 0 rgba(150, 150, 150, 0.25);
@@ -518,7 +516,15 @@
     margin-top: 61px;
     gap: 80px;
 }
-.assistant-box{
+.assistant-box__arrows{
+    display: flex;
+    flex-direction: row;
+    gap: 471px ;
+    position: absolute;
+    margin: 310px  0 0 -50px;
+}
+.arrow-white__left{
+    transform: rotate(180deg);
 }
 .assistant-box_text-box{
     font-size: 20px;
@@ -912,6 +918,13 @@ additional-solutions__item-block-text{
     display: flex;
     flex-direction: row;
     gap: 120px;
+    position: relative;
+}
+.reviews__block__arrows{
+    display: flex;
+    position: absolute;
+    gap: 1150px;
+    margin: 150px 0 0 -71px;
 }
 .reviews__block-text{
     display: flex;
