@@ -224,8 +224,9 @@
 
 .Kitchen-choose{
     width: 100%;
-    height: 2300px;
+    height: 100%;
     position: relative;
+    padding: 140px;
 }
 .kitchen-list_main{
     position: relative;
@@ -687,7 +688,7 @@
 }
 .additional-solutions__list-item{
     display: grid;
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(349px, 1fr));
     margin-top:60px;
     gap: 60px;
 

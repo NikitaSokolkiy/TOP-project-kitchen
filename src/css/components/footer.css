@@ -1,7 +1,10 @@
-
+@font-face {
+    font-family: "TT Norms";
+    src: url("src/fonts/TT Norms/TTNorms-Black.woff2") format("woff2");
+}
 .footer{
     color: rgb(160, 168, 177);
-    font-family: sans-serif;
+    font-family: "TT Norms";
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
