@@ -4,7 +4,6 @@
 @import "../components/main.css";
 @import "../media/tablet.css";
 
-
 body{
     padding: 0;
     width: 100%;
@@ -14,7 +13,7 @@ body{
 }
 .container {
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0 0;
     margin: 0 auto;
 }
 .displayNone{display: none;}

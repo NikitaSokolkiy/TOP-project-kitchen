@@ -31,11 +31,9 @@
     align-items: flex-start;
     justify-content: flex-end;
     gap: 74px;
-    padding-bottom: 25px;
     max-width: 1200px;
 
 }
-
 
 .main-header__text-top{
     font-size: 60px;
@@ -46,19 +44,11 @@
     margin: 0;
     padding: 0;
 }
-.main-header__text-bottom{
-    font-size: 60px;
-    font-weight: 800;
-    line-height: 115%;
-    text-align: left;
-    color: rgb(227, 1, 15);
-    margin: 0;
-    padding: 0;
-}
+
 .header-advertising-block{
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 43px;
     animation: slideInFromLeft 2s ease-out;
 }
 .advertising-list{
@@ -108,7 +98,7 @@
     justify-content: center;
 
     box-shadow: 0 10px 17px 0 rgba(0,0,0,0.1);
-    margin-bottom: 48px;
+    margin-bottom: 35px;
     animation: slideInFromRight 1.5s ease-out;
 }
 .sale-block__info{
@@ -210,16 +200,6 @@
     margin: 0;
     padding: 0;
 
-}
-.advantages-text-2{
-    color: rgb(12, 12, 12);
-    font-size: 20px;
-    font-weight: 350;
-    line-height: 137%;
-    letter-spacing: 0;
-    text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
 .Kitchen-choose{
@@ -1162,4 +1142,14 @@ additional-solutions__item-block-text{
     line-height: 115%;
     letter-spacing: 0;
     text-align: center
+}
+
+.block {
+    width: 30%; /* Ширина блока, чтобы поместить 3 блока в строку */
+    float: left; /* Для расположения блоков в ряд */
+}
+
+/* Стили для слайдера */
+.slider {
+    display: none; /* По умолчанию скрываем слайдер */
 }
