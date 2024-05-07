@@ -1153,3 +1153,6 @@ additional-solutions__item-block-text{
 .slider {
     display: none; /* По умолчанию скрываем слайдер */
 }
+
+.swiper-wrapper{padding-bottom: 15px;}
+.swiper-slide{height: 100%;}

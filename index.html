@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/base/style.css">
     <title>Kitchen craft</title>
@@ -135,206 +137,224 @@
             <img src="./src/img/BG-2.jpeg" alt="" class="bg-img-absolute">
             <div class="kitchen-choose__block container">
                 <h2 class="kitchen-choose_text">Какие кухни <br><span class="red-dark-color">мы производим?</span></h2>
-                <div class="slider">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <ul class="kitchen-list">
-                                    <li class="kitchen-item kitchen-list__item">
-                                        <div class="card-img-block">
-                                            <img src="src/img/photoKitchen/Kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                <!--<ul class="kitchen-list">-->
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <li class="kitchen-item kitchen-list__item">
+                                <div class="card-img-block">
+                                    <img src="src/img/photoKitchen/Kitchen_1-1.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                </div>
+                                <div class="info-box">
+                                    <div class="price-action">
+                                        <div class="material">
+                                            <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                            <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                            <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                                         </div>
-                                        <div class="info-box">
-                                            <div class="price-action">
-                                                <div class="material">
-                                                    <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
-                                                    <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
-                                                    <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
-                                                </div>
-                                                <div class="price">
-                                                    <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
-                                                </div>
-                                                <div class="info-box_buttons">
-                                                    <button class="get-catalog">Получить каталог</button>
-                                                    <button class="button_amount"> Расчитать стоимость </button>
-                                                </div>
-                                            </div>
+                                        <div class="price">
+                                            <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                                         </div>
-                                    </li>
-                                    <li class="kitchen-item">
-                                        <div class="card-img-block">
-                                            <img src="src/img/photoKitchen/Kitchen_1-2.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                        <div class="info-box_buttons">
+                                            <button class="get-catalog">Получить каталог</button>
+                                            <button class="button_amount"> Расчитать стоимость </button>
                                         </div>
-                                        <div class="info-box">
-                                            <div class="price-action">
-                                                <div class="material">
-                                                    <p class="material_light-text">материал фасадов: <span class="material_bold-text">Крашенный МДФ и шпонированный МДФ</span></p>
-                                                    <p class="material_light-text">фурнитура: <span class="material_bold-text">Braun</span></p>
-                                                    <p class="material_light-text">столешница: <span class="material_bold-text">Компакт-плита</span></p>
-                                                </div>
-                                                <div class="price">
-                                                    <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
-                                                </div>
-                                                <div class="info-box_buttons">
-                                                    <button class="get-catalog">Получить каталог</button>
-                                                    <button class="button_amount"> Расчитать стоимость </button>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="kitchen-item">
+                                <div class="card-img-block">
+                                    <img src="src/img/photoKitchen/Kitchen_1-2.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                </div>
+                                <div class="info-box">
+                                    <div class="price-action">
+                                        <div class="material">
+                                            <p class="material_light-text">материал фасадов: <span class="material_bold-text">Крашенный МДФ и шпонированный МДФ</span></p>
+                                            <p class="material_light-text">фурнитура: <span class="material_bold-text">Braun</span></p>
+                                            <p class="material_light-text">столешница: <span class="material_bold-text">Компакт-плита</span></p>
                                         </div>
-                                    </li>
-                                    <li class="kitchen-item">
-                                        <div class="card-img-block">
-                                            <img src="src/img/photoKitchen/Kitchen_1-3.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                        <div class="price">
+                                            <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                                         </div>
-                                        <div class="info-box">
-                                            <div class="price-action">
-                                                <div class="material">
-                                                    <p class="material_light-text">материал фасадов: <span class="material_bold-text">Пластик и шпонированный МДФ</span></p>
-                                                    <p class="material_light-text">фурнитура: <span class="material_bold-text">Blum</span></p>
-                                                    <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
-                                                </div>
-                                                <div class="price">
-                                                    <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
-                                                </div>
-                                                <div class="info-box_buttons">
-                                                    <button class="get-catalog">Получить каталог</button>
-                                                    <button class="button_amount"> Расчитать стоимость </button>
-                                                </div>
-                                            </div>
+                                        <div class="info-box_buttons">
+                                            <button class="get-catalog">Получить каталог</button>
+                                            <button class="button_amount"> Расчитать стоимость </button>
                                         </div>
-                                    </li>
-                                    <li class="kitchen-item">
-                                        <div class="card-img-block">
-                                            <img src="src/img/photoKitchen/Kitchen_2-1.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="kitchen-item">
+                                <div class="card-img-block">
+                                    <img src="src/img/photoKitchen/Kitchen_1-3.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                </div>
+                                <div class="info-box">
+                                    <div class="price-action">
+                                        <div class="material">
+                                            <p class="material_light-text">материал фасадов: <span class="material_bold-text">Пластик и шпонированный МДФ</span></p>
+                                            <p class="material_light-text">фурнитура: <span class="material_bold-text">Blum</span></p>
+                                            <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                                         </div>
-                                        <div class="info-box">
-                                            <div class="price-action">
-                                                <div class="material">
-                                                    <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
-                                                    <p class="material_light-text">фурнитура: <span class="material_bold-text">Braun</span></p>
-                                                    <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
-                                                </div>
-                                                <div class="price">
-                                                    <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
-                                                </div>
-                                                <div class="info-box_buttons">
-                                                    <button class="get-catalog">Получить каталог</button>
-                                                    <button class="button_amount"> Расчитать стоимость </button>
-                                                </div>
-                                            </div>
+                                        <div class="price">
+                                            <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                                         </div>
-                                    </li>
-                                    <li class="kitchen-item">
-                                        <div class="card-img-block">
-                                            <img src="src/img/photoKitchen/Kitchen_2-2.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                        <div class="info-box_buttons">
+                                            <button class="get-catalog">Получить каталог</button>
+                                            <button class="button_amount"> Расчитать стоимость </button>
                                         </div>
-                                        <div class="info-box">
-                                            <div class="price-action">
-                                                <div class="material">
-                                                    <p class="material_light-text">материал фасадов: <span class="material_bold-text">Массив и шпонированый МДФ</span></p>
-                                                    <p class="material_light-text">фурнитура: <span class="material_bold-text">Blum</span></p>
-                                                    <p class="material_light-text">столешница: <span class="material_bold-text">Компакт-плита</span></p>
-                                                </div>
-                                                <div class="price">
-                                                    <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
-                                                </div>
-                                                <div class="info-box_buttons">
-                                                    <button class="get-catalog">Получить каталог</button>
-                                                    <button class="button_amount"> Расчитать стоимость </button>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="kitchen-item">
+                                <div class="card-img-block">
+                                    <img src="src/img/photoKitchen/Kitchen_2-1.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                </div>
+                                <div class="info-box">
+                                    <div class="price-action">
+                                        <div class="material">
+                                            <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                            <p class="material_light-text">фурнитура: <span class="material_bold-text">Braun</span></p>
+                                            <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                                         </div>
-                                    </li>
-                                    <li class="kitchen-item">
-                                        <div class="card-img-block">
-                                            <img src="src/img/photoKitchen/Kitchen_2-3.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                        <div class="price">
+                                            <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                                         </div>
-                                        <div class="info-box">
-                                            <div class="price-action">
-                                                <div class="material">
-                                                    <p class="material_light-text">материал фасадов: <span class="material_bold-text">Крашенный МДФ и шпонированный МДФ</span></p>
-                                                    <p class="material_light-text">фурнитура: <span class="material_bold-text">Hettich</span></p>
-                                                    <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
-                                                </div>
-                                                <div class="price">
-                                                    <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
-                                                </div>
-                                                <div class="info-box_buttons">
-                                                    <button class="get-catalog">Получить каталог</button>
-                                                    <button class="button_amount"> Расчитать стоимость </button>
-                                                </div>
-                                            </div>
+                                        <div class="info-box_buttons">
+                                            <button class="get-catalog">Получить каталог</button>
+                                            <button class="button_amount"> Расчитать стоимость </button>
                                         </div>
-                                    </li>
-                                    <li class="kitchen-item">
-                                        <div class="card-img-block">
-                                            <img src="src/img/photoKitchen/Kitchen_3-1.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="kitchen-item">
+                                <div class="card-img-block">
+                                    <img src="src/img/photoKitchen/Kitchen_2-2.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                </div>
+                                <div class="info-box">
+                                    <div class="price-action">
+                                        <div class="material">
+                                            <p class="material_light-text">материал фасадов: <span class="material_bold-text">Массив и шпонированый МДФ</span></p>
+                                            <p class="material_light-text">фурнитура: <span class="material_bold-text">Blum</span></p>
+                                            <p class="material_light-text">столешница: <span class="material_bold-text">Компакт-плита</span></p>
                                         </div>
-                                        <div class="info-box">
-                                            <div class="price-action">
-                                                <div class="material">
-                                                    <p class="material_light-text">материал фасадов: <span class="material_bold-text">Крашенный МДФ</span></p>
-                                                    <p class="material_light-text">фурнитура: <span class="material_bold-text">Hettich</span></p>
-                                                    <p class="material_light-text">столешница: <span class="material_bold-text">Искусственный камень</span></p>
-                                                </div>
-                                                <div class="price">
-                                                    <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
-                                                </div>
-                                                <div class="info-box_buttons">
-                                                    <button class="get-catalog">Получить каталог</button>
-                                                    <button class="button_amount"> Расчитать стоимость </button>
-                                                </div>
-                                            </div>
+                                        <div class="price">
+                                            <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                                         </div>
-                                    </li>
-                                    <li class="kitchen-item">
-                                        <div class="card-img-block">
-                                            <img src="src/img/photoKitchen/Kitchen_3-2.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                        <div class="info-box_buttons">
+                                            <button class="get-catalog">Получить каталог</button>
+                                            <button class="button_amount"> Расчитать стоимость </button>
                                         </div>
-                                        <div class="info-box">
-                                            <div class="price-action">
-                                                <div class="material">
-                                                    <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
-                                                    <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
-                                                    <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
-                                                </div>
-                                                <div class="price">
-                                                    <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
-                                                </div>
-                                                <div class="info-box_buttons">
-                                                    <button class="get-catalog">Получить каталог</button>
-                                                    <button class="button_amount"> Расчитать стоимость </button>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="kitchen-item">
+                                <div class="card-img-block">
+                                    <img src="src/img/photoKitchen/Kitchen_2-3.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                </div>
+                                <div class="info-box">
+                                    <div class="price-action">
+                                        <div class="material">
+                                            <p class="material_light-text">материал фасадов: <span class="material_bold-text">Крашенный МДФ и шпонированный МДФ</span></p>
+                                            <p class="material_light-text">фурнитура: <span class="material_bold-text">Hettich</span></p>
+                                            <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
                                         </div>
-                                    </li>
-                                    <li class="kitchen-item">
-                                        <div class="card-img-block">
-                                            <img src="src/img/photoKitchen/Kitchen_3-3.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                        <div class="price">
+                                            <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
                                         </div>
-                                        <div class="info-box">
-                                            <div class="price-action">
-                                                <div class="material">
-                                                    <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
-                                                    <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
-                                                    <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
-                                                </div>
-                                                <div class="price">
-                                                    <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
-                                                </div>
-                                                <div class="info-box_buttons">
-                                                    <button class="get-catalog">Получить каталог</button>
-                                                    <button class="button_amount"> Расчитать стоимость </button>
-                                                </div>
-                                            </div>
+                                        <div class="info-box_buttons">
+                                            <button class="get-catalog">Получить каталог</button>
+                                            <button class="button_amount"> Расчитать стоимость </button>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Навигация для слайдера (необязательно) -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="kitchen-item">
+                                <div class="card-img-block">
+                                    <img src="src/img/photoKitchen/Kitchen_3-1.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                </div>
+                                <div class="info-box">
+                                    <div class="price-action">
+                                        <div class="material">
+                                            <p class="material_light-text">материал фасадов: <span class="material_bold-text">Крашенный МДФ</span></p>
+                                            <p class="material_light-text">фурнитура: <span class="material_bold-text">Hettich</span></p>
+                                            <p class="material_light-text">столешница: <span class="material_bold-text">Искусственный камень</span></p>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
+                                        </div>
+                                        <div class="info-box_buttons">
+                                            <button class="get-catalog">Получить каталог</button>
+                                            <button class="button_amount"> Расчитать стоимость </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="kitchen-item">
+                                <div class="card-img-block">
+                                    <img src="src/img/photoKitchen/Kitchen_3-2.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                </div>
+                                <div class="info-box">
+                                    <div class="price-action">
+                                        <div class="material">
+                                            <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                            <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                            <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
+                                        </div>
+                                        <div class="info-box_buttons">
+                                            <button class="get-catalog">Получить каталог</button>
+                                            <button class="button_amount"> Расчитать стоимость </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="kitchen-item">
+                                <div class="card-img-block">
+                                    <img src="src/img/photoKitchen/Kitchen_3-3.jpeg" alt="Kitchen-" class="border-radius kitchen-list__item-img">
+                                </div>
+                                <div class="info-box">
+                                    <div class="price-action">
+                                        <div class="material">
+                                            <p class="material_light-text">материал фасадов: <span class="material_bold-text">пластик</span></p>
+                                            <p class="material_light-text">фурнитура: <span class="material_bold-text">Fennel</span></p>
+                                            <p class="material_light-text">столешница: <span class="material_bold-text">Постформинг</span></p>
+                                        </div>
+                                        <div class="price">
+                                            <p class="price_light-text">Цена: <span class="old-price">от <del>26 850</del></span><span class="new-price">19 990 ₽ м./п. </span></p>
+                                        </div>
+                                        <div class="info-box_buttons">
+                                            <button class="get-catalog">Получить каталог</button>
+                                            <button class="button_amount"> Расчитать стоимость </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </div>
                     </div>
+               </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            <!--</ul>-->
             </div>
         </section>
         <section class="not-find-model">
@@ -708,6 +728,7 @@
             </div>
         </div>
     </footer>
-<script src="src/js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/swiper.js"></script>
 </body>
 </html>
