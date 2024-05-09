@@ -198,188 +198,174 @@
     font-weight: 400;
     line-height: 137%;
     margin: 0;
-    padding: 0;
+
 
 }
-
-.Kitchen-choose{
+/*<section class="we-produce">...............................*/
+.we-produce{
     width: 100%;
     height: 100%;
     position: relative;
-    padding: 140px;
 }
-.kitchen-list_main{
-    position: relative;
-    z-index: 4;
-}
-.bg-img-absolute{
+.bg-img-we-produce{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
+    z-index: 1;
     width: 100%;
     height: 100%;
-    z-index: 1;
 }
-.kitchen-choose__block{
+.we-produce-block__wrapper{
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 84px;
 }
-.kitchen-choose_text{
-    font-weight: 800;
+.we-produce__title-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title{
     font-size: 48px;
-    line-height: 55.2px;
-    color: #0c0c0c;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: 0;
+    text-align: left;
 }
-.kitchen-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 25px 35px;
-    margin-top: 80px;
+.title-block__buttons{
+    display: flex;
+    gap: 20px;
+    align-items: end;
 }
-
-.border-radius{
-    border-radius: 15px 15px 0 0;
-    height: auto;
-    width: 100%;
-    max-width: 100%;
+.we-produce__list{
+    padding-bottom: 120px;
 }
-.kitchen-item{
-    width: 100%;
+.we-produce__item{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    background-color: white;
     border-radius: 15px;
-
     box-shadow: 0px 4px 20px 0px rgba(150, 150, 150, 0.25);
-    background: rgb(255, 255, 255);
+    gap: 18px;
+    max-width: 350px;
+    max-height: 620px;
 }
-.kitchen-item:hover .border-radius{
-    animation: animationScale 1s ease-in-out;
-    animation-fill-mode: forwards;
-}
-.kitchen-item:hover .card-img-block:after{
-    background-color: rgba(0,0,0,0.2);
-}
-.card-img-block{
+.we-produce__item-img{
+    border-radius: 15px 15px 0 0 ;
     width: 100%;
-    height: auto;
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 15px 15px 0 0;
-    position: relative;
 }
-.card-img-block:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-    transition: all .8s ease;
-}
-.kitchen-list__item-img{
-    height: auto;
-    max-width: 100%;
-}
-/* .info-box{
-    max-width: 300px;
-    padding-left: 20px;
-    padding-bottom: 23px;
+.we-produce__item__info-box{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 33px 20px;
+    gap: 30px;
 
-} */
-.info-box{
-    width: 100%;
-    height: 100%;
-    max-height: 390px;
-    padding: 30px 20px;
+}
+.info-box__wrapper{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    height: 186px;
     justify-content: space-between;
-    gap: 30px;
 }
-.material{
-    width: 100%;
+.item__info-box__materials{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-}
-.price-action{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 30px;
-}
-.material_light-text{
+    gap: 10px;
     color: rgb(75, 75, 75);
     font-size: 18px;
     font-weight: 400;
     line-height: 115%;
+    letter-spacing: 0;
     text-align: left;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+
 }
-.material_bold-text{
-    padding-left: 10px;
+.material{
+    display: flex;
+    flex-direction: column;
+}
+.material__answer{
     color: rgb(12, 12, 12);
     font-size: 18px;
     font-weight: 600;
     line-height: 115%;
+    letter-spacing: 0;
     text-align: left;
 }
-.price_light-text{
+.item__info-box__price{
     color: rgb(75, 75, 75);
     font-size: 18px;
     font-weight: 400;
     line-height: 115%;
+    letter-spacing: 0;
     text-align: left;
 }
-.old-price{
+.price-main{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.price__2{
     color: rgb(12, 12, 12);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 115%;
+    letter-spacing: 0;
     text-align: left;
-    padding-left: 10px;
-
 }
-.new-price{
+.price__3{
+    color: rgb(12, 12, 12);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: 0;
+    text-align: left;
+    text-decoration: line-through;
+}
+.price__4{
     color: rgb(227, 1, 15);
     font-size: 22px;
-    font-weight: 599;
-    line-height: 115%;
+    font-weight: 700;
+    line-height: 70%;
+    letter-spacing: 0;
     text-align: left;
-    padding-left: 10px;
 }
-.info-box_buttons{
-    width: 100%;
+.item__info-box__buttons{
     display: flex;
     flex-direction: column;
-    max-width: 201px;
     gap: 15px;
 }
-.get-catalog{
-    color: rgb(38, 38, 38);
+.info-box__buttons__get-catalog{
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(227, 1, 15);
+    border-radius: 5px;
     font-size: 14px;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0;
     text-align: center;
-    border-radius: 5px;
-    background: white;
-    height: 49px;
-    min-width: 201px;
-    padding: 10px;
-    border: 1px solid rgb(227, 1, 15);
+    max-width: 201px;
+    padding: 20px;
 }
+.info-box__buttons__amount{
+    border-radius: 5px;
+    background: rgb(227, 1, 15);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    max-width: 201px;
+    padding: 20px;
+    border-style: none;
+}
+
+/*<section class="not-find-model">...........................*/
 .not-find-model{
     width: 100%;
     height: auto;
@@ -430,7 +416,7 @@
     padding: 0 20% 0 20px  ;
 }
 .bold-text{
-    color: rgb(12, 12, 12);
+
     font-size: 23px;
     font-weight: 700;
     line-height: 137%;
@@ -1144,15 +1130,11 @@ additional-solutions__item-block-text{
     text-align: center
 }
 
-.block {
-    width: 30%; /* Ширина блока, чтобы поместить 3 блока в строку */
-    float: left; /* Для расположения блоков в ряд */
+.swiper-button-next{
+    color: #E3010F;
+    border-radius: 50%;
+    border-color: #E3010F;
+    background-color: #333333;
+    font-size: 10px;
+    width: 50px;
 }
-
-/* Стили для слайдера */
-.slider {
-    display: none; /* По умолчанию скрываем слайдер */
-}
-
-.swiper-wrapper{padding-bottom: 15px;}
-.swiper-slide{height: 100%;}

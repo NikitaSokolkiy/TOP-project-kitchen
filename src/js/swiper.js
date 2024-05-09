@@ -3,10 +3,10 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 50,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.button-swiper__right',
+        prevEl: '.button-swiper__left',
     },
 });
 
