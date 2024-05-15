@@ -250,9 +250,32 @@
     max-width: 350px;
     max-height: 620px;
 }
-.we-produce__item-img{
-    border-radius: 15px 15px 0 0 ;
+.we-produce__item:hover .we-produce__item-img{
+    animation: animationScale 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.we-produce__item:hover .we-produce__list__item__img:after{
+    background-color: black;
+    opacity: 0;
+}
+.we-produce__list__item__img{
     width: 100%;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+.we-produce__list__item__img:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    transition: all 1s ease-in-out;
 }
 .we-produce__item__info-box{
     display: flex;
@@ -364,40 +387,53 @@
     padding: 20px;
     border-style: none;
 }
-
-/*<section class="not-find-model">...........................*/
-.not-find-model{
+.swiper{
     width: 100%;
-    height: auto;
-    max-width: 1200px;
+    height: 100%;
+}
+.swiper-slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.swiper-pagination-bullet-active {
+    background-color: red;
+}
+.swiper-pagination{
+    padding-bottom: 60px;
+}
+/*<section class="not-find-model">...........................*/
+.not-find-model__wrapper{
     display: flex;
     flex-direction: column;
-    margin: auto;
+    gap: 50px;
 }
-.not-find-model__text-catalog{
+.not-find-model__txt-box{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.not-find-model__title{
     font-size: 48px;
     font-weight: 800;
     line-height: 115%;
+    letter-spacing: 0;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
-.not-find-model__second-text{
+.not-find-model__secondary{
     font-size: 28px;
     font-weight: 400;
     line-height: 115%;
+    letter-spacing: 0;
     text-align: left;
-    margin-top: 69px;
-}
-.not-find-model__second-text-2{
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 115%;
-    text-align: left;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .not-find-model__catalog{
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
 }
 .catalog-list{
     display: flex;
@@ -405,53 +441,56 @@
     gap: 42px;
 }
 .catalog-item{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
     border-radius: 15px;
     box-shadow: 0 4px 20px 0 rgba(150, 150, 150, 0.25);
     background: rgb(255, 255, 255);
-}
-.catalog-list__item-img{
-    width: 100%;
+    max-width: 351px;
+    max-height: 420px;
 }
 .catalog-item__info-box{
-    padding: 0 20% 0 20px  ;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding:  0 0 29px 20px;
+    max-width: 310px;
 }
-.bold-text{
-
+.catalog-item__info-box__txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.catalog-item__info-box__txt__title{
+    color: rgb(12, 12, 12);
     font-size: 23px;
     font-weight: 700;
     line-height: 137%;
+    letter-spacing: 0;
     text-align: left;
-    margin-top: 18px;
 }
-.more-than{
+.catalog-item__info-box__txt__secondary{
     font-size: 18px;
     font-weight: 400;
     line-height: 126%;
+    letter-spacing: 0;
     text-align: left;
-    margin-top: 10px;
-}
-.get-catalog_red-button{
-    padding:  0 0 29px 20px;
 }
 .get-catalog_button{
-    color: white;
+    border-radius: 5px;
     background: rgb(227, 1, 15);
+    color: white;
+    border-style: none;
+    max-width: 178px;
+    height: 49px;
     font-size: 14px;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0;
     text-align: center;
-    border-radius: 5px;
-    height: 49px;
-    min-width: 201px;
-    padding: 10px;
-    border: 1px solid rgb(227, 1, 15);
 }
-.hover-text:hover{
-    border-bottom: #E3010F;
-    border-bottom-style: solid;
-    max-width: fit-content;
-}
+/*<section class="what-design-box"*/
 .what-design-box{
     margin: 98px auto;
     max-width: 1200px;
