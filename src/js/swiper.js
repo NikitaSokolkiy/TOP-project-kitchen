@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper', {
         1100:{
           slidesPerView: 3
         },
-        760: {
+        700: {
             slidesPerView: 2,
             // centeredSlides: true,
             // spaceBetween: 30,
@@ -20,7 +20,6 @@ const swiper = new Swiper('.swiper', {
     pagination: {
         el: ".swiper-pagination",
     },
-    mousewheel: true,
     keyboard: true,
 
 });
